@@ -1,4 +1,11 @@
 import React from "react";
-export default function Home(){
-    return <h1>About Page</h1>
+import MapContainer from "../components/MapContainer";
+
+export default function Home() {
+  return (
+    <div>
+      <h1>About Page</h1>
+      <MapContainer />
+    </div>
+  );
 }
