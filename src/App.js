@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Contact from "/home/shoebm891/farm/farm-house/src/pages/Contact.js";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import { Route, Routes } from "react-router-dom";
@@ -16,7 +16,7 @@ function App() {
         </Routes>
       </div>
     </>
-  );s
+  );
 }
 
 export default App;
