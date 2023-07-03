@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Map, GoogleApiWrapper } from "google-maps-react";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const MapContainer = (props) => {
   useEffect(() => {
@@ -20,6 +21,12 @@ const MapContainer = (props) => {
         }
       );
 
+      const marker = new props.google.maps.Marker({
+        position: hyderabad,
+        title: "7 Tombs Road",
+      });
+      marker.setMap(map);
+
       map.setStreetView(panorama);
     };
 
@@ -30,11 +37,11 @@ const MapContainer = (props) => {
   return (
     <div className="map--container">
       <div id="map" style={{ width: "100%", height: "400px" }}></div>
-      <div id="pano" style={{ width: "100%", height: "400px" }}></div>
     </div>
   );
 };
+//<div id="pano" style={{ width: "100%", height: "400px" }}></div>
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyCE8ywNBv2bssA33ClW-L1cS4aijvgYAAk",
+  apiKey: API_KEY,
 })(MapContainer);
