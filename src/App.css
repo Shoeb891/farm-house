@@ -3,15 +3,13 @@
   text-align: center;
 }
 
-
 body {
-
   margin: 0;
 }
 
 .nav {
-  background-color: antiquewhite;
-  color: blueviolet;
+  background-color: #4c3c3c;
+  color: #c5aa6a;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -39,15 +37,18 @@ body {
 }
 
 .nav li.active {
-  background-color: aquamarine;
+  background-color: #2f2626;
 }
 .nav li:hover {
-  background-color: white;
+  background-color: #ede5d2;
 }
 
 .map--container {
   display: flex;
-  width: 40%;
-  height: 200px;
-  margin: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: fit-content;
+  margin: 10px auto;
+  padding: auto;
 }

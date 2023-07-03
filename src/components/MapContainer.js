@@ -21,21 +21,21 @@ const MapContainer = (props) => {
         }
       );
 
-      const marker = new props.google.maps.Marker({
-        position: hyderabad,
-        animation: props.google.maps.Animation.DROP,
-        title: "7 Tombs Road",
-      });
-      marker.addListener("click", toggleBounce);
-      marker.setMap(map);
+      // const marker = new props.google.maps.Marker({
+      //   position: hyderabad,
+      //   animation: props.google.maps.Animation.DROP,
+      //   title: "7 Tombs Road",
+      // });
+      // marker.addListener("click", toggleBounce);
+      // marker.setMap(map);
 
-      function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(props.google.maps.Animation.BOUNCE);
-        }
-      }
+      // function toggleBounce() {
+      //   if (marker.getAnimation() !== null) {
+      //     marker.setAnimation(null);
+      //   } else {
+      //     marker.setAnimation(props.google.maps.Animation.BOUNCE);
+      //   }
+      // }
 
       map.setStreetView(panorama);
     };
@@ -47,10 +47,10 @@ const MapContainer = (props) => {
   return (
     <div className="map--container">
       <div id="map" style={{ width: "100%", height: "400px" }}></div>
+      <div id="pano" style={{ width: "100%", height: "400px" }}></div>
     </div>
   );
 };
-//<div id="pano" style={{ width: "100%", height: "400px" }}></div>
 
 export default GoogleApiWrapper({
   apiKey: API_KEY,
