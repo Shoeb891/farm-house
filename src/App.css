@@ -38,7 +38,7 @@ body {
   padding: 4px 8px;
 }
 
-.nav li:active {
+.nav li.active {
   background-color: aquamarine;
 }
 .nav li:hover {
