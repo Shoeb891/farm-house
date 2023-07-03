@@ -23,9 +23,19 @@ const MapContainer = (props) => {
 
       const marker = new props.google.maps.Marker({
         position: hyderabad,
+        animation: props.google.maps.Animation.DROP,
         title: "7 Tombs Road",
       });
+      marker.addListener("click", toggleBounce);
       marker.setMap(map);
+
+      function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(props.google.maps.Animation.BOUNCE);
+        }
+      }
 
       map.setStreetView(panorama);
     };
