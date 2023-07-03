@@ -3,6 +3,7 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 body{
   margin: 0;
 }
@@ -43,3 +44,33 @@ body{
 .nav li:hover{
   background-color: white;
 }
+=======
+.nav {
+  background-color: chocolate;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav--items {
+  display: flex;
+}
+
+.map--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 8px;
+}
+
+#map {
+  width: 50%;
+  height: 100%;
+}
+
+#pano {
+  width: 50%;
+  height: 100%;
+}
+>>>>>>> 6eb8f648219cfcaffd712766ba7ce4208458a47c
