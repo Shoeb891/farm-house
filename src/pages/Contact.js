@@ -1,5 +1,5 @@
 import React from "react";
-import "/home/shoebm891/Uni_Farm/farm-house/src/pages/contact.css";
+import "./contact.css";
 export default function Home() {
   return (
     <div className="cbody">
@@ -23,7 +23,7 @@ export default function Home() {
           </ul>
         </div>
         <div className="contact">
-          <h3>Contact Us</h3>
+          <h3 className="title">Contact Us</h3>
           <form>
             <p>
               <label>Name</label>
