@@ -53,9 +53,6 @@ header {
   z-index: 9;
   transition: 0.7s;
   color: #fff;
-  top: 20px;
-  width: 95%;
-  transform: translate(-50%);
 }
 
 nav.navbar {
