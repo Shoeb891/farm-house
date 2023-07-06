@@ -37,9 +37,6 @@ header {
   align-items: center;
   margin: 0 auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  top: 20px;
-  width: 95%;
-  transform: translate(-50%);
 }
 
 .container-inner {
