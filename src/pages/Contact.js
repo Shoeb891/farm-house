@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Contact.css";
-import { FaRoad, FaPhone, FaEnvelope } from "react-icons/fa"; // Import specific icons from react-icons
+import { FaRoad, FaPhone, FaEnvelope } from "react-icons/fa";
+
 export default function Home() {
   return (
     <div className="cbody">
@@ -13,13 +14,13 @@ export default function Home() {
             <h3>Universal Farms</h3>
             <ul>
               <li>
-                <i className="fa fa-road"></i> Hyderabad, Telangana
+                <FaRoad /> Hyderabad, Telangana
               </li>
               <li>
-                <i className="fa fa-phone"></i> (+91) 955xxxxxxx
+                <FaPhone /> (+91) 955xxxxxxx
               </li>
               <li>
-                <i className="fa fa-envelope"></i> info@universalfarms.in
+                <FaEnvelope /> info@universalfarms.in
               </li>
             </ul>
           </div>
