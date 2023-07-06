@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Contact.css";
 import { FaRoad, FaPhone, FaEnvelope } from "react-icons/fa"; // Import specific icons from react-icons
-
 export default function Home() {
   return (
     <div className="cbody">
@@ -14,13 +13,13 @@ export default function Home() {
             <h3>Universal Farms</h3>
             <ul>
               <li>
-                <FaRoad /> Hyderabad, Telangana
+                <i className="fa fa-road"></i> Hyderabad, Telangana
               </li>
               <li>
-                <FaPhone /> (+91) 955xxxxxxx
+                <i className="fa fa-phone"></i> (+91) 955xxxxxxx
               </li>
               <li>
-                <FaEnvelope /> info@universalfarms.in
+                <i className="fa fa-envelope"></i> info@universalfarms.in
               </li>
             </ul>
           </div>
