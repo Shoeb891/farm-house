@@ -30,13 +30,16 @@ header {
 .container {
   max-width: 1350px;
   object-fit: contain;
-  position: relative;
+  position: fixed;
   display: grid;
   grid-template-columns: 5fr 1fr auto;
   justify-content: flex-end;
   align-items: center;
   margin: 0 auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  top: 20px;
+  width: 95%;
+  transform: translate(-50%);
 }
 
 .container-inner {
@@ -53,6 +56,9 @@ header {
   z-index: 9;
   transition: 0.7s;
   color: #fff;
+  top: 20px;
+  width: 95%;
+  transform: translate(-50%);
 }
 
 nav.navbar {
